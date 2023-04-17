@@ -126,11 +126,9 @@ button{
         <input type="password" placeholder="Password" id="password" name="pass">
         {% if messages %}
         {% for msg in messages %}
-        {{msg}}
+        <div style="color: red">{{ msg }}</div>
         {% endfor %}
-        
-
-        {% endif %}
+{% endif %}
 
         <button type="submit">Log In</button>
         <!-- <input type="button" value=""> -->

@@ -41,7 +41,7 @@ def LoginPage(request):
             return redirect('home')
         else:
             # return HttpResponse("Password Mismatch")
-            messages.error(request,'password mismatch')
+            messages.error(request,'password mismatch!')
 
 
     return render(request,'login.html')
